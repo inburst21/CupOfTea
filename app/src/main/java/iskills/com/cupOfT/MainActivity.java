@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
     ButterKnife.bind(this);
-    cupView.setImageResource(R.drawable.ic_cup_svg_icon); //TODO REMOVE_QUESTION Could show use of a cup manager that gets out a cup by temperature
+    cupView.setImageResource(R.drawable.ic_cup_svg_icon);
     mainPresenter.init(this);
   }
 

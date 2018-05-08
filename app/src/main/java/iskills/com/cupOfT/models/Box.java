@@ -5,20 +5,19 @@ package iskills.com.cupOfT.models;
  * 5/7/18
  */
 //TODO 4 make a generic holder T update arguments of all methods
-//TODO REMOVE_LATER Change T to Object
-public class Box<T> {
+public class Box {
 
-    private T object;
+    private Object object;
 
-    public Box(T t){
+    public Box(Object t){
         this.object = t;
     }
 
-    public void setContent(T content){
+    public void setContent(Object content){
         this.object = content;
     }
 
-    public T getContent() {
+    public Object getContent() {
         if(object == null) {
             try {
                 throw new IllegalAccessException();
@@ -31,9 +30,4 @@ public class Box<T> {
 
 
     //TODO 5 make a getName method that returns the generic class simple name
-    //BELOW
-    public String getName(){
-        return object.getClass().getSimpleName();
-    }
-    //TODO REMOVE_LATER ABOVE
 }
