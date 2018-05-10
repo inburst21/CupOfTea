@@ -6,12 +6,10 @@ import iskills.com.cupOfT.R;
  * lennyhicks
  * 5/7/18
  */
-public class Milk extends Liquid {
-    public void milk(){
-
-    }
+//TODO Step ?? add coffee
+public class Coffee extends Liquid {
     @Override
     public Integer color() {
-        return R.color.white;
+        return R.color.coffee;
     }
 }

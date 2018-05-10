@@ -3,7 +3,7 @@ package iskills.com.cupOfT;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-import iskills.com.cupOfT.liquids.Milk;
+import iskills.com.cupOfT.liquids.Coffee;
 import iskills.com.cupOfT.liquids.Tea;
 import iskills.com.cupOfT.models.Box;
 import iskills.com.cupOfT.models.Empty;
@@ -22,20 +22,19 @@ class IngredientManager{
         //BELOW
 
         addSelection(new Box<>(new Empty()));
-        addSelection(new Box<>(new Milk()));
+        addSelection(new Box<>(new Coffee()));
         addSelection(new Box<>(new Tea()));
 
         //Maybe show two ways
 
-        Box<Milk> milkBox = new Box<>(new Milk());
-//        milkBox.getContent().milk();  TODO REMOVE Possible lesson about this way also.
+        Box<Coffee> coffeeBox = new Box<>(new Coffee());
         Box teaBox = new Box<>(new Tea());
-        addSelection(milkBox);
+        addSelection(coffeeBox);
         addSelection(teaBox);
         addSelection(new Box<>(new Reminder()));
         //TODO REMOVE_LATER ABOVE && UNCOMMENT BELOW
 //        ingredientList.add(new Remove());  -  This would be the point a developer would come across trying to extend everything
-//        ingredientList.add(new Milk());
+//        ingredientList.add(new Coffee());
 //        ingredientList.add(new Tea());
     }
 
