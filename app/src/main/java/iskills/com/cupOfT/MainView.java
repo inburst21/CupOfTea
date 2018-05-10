@@ -9,6 +9,5 @@ import java.util.List;
 interface MainView {
     void renderView(List<String> ingredients); // Or easily show list
     void updateLiquidColor(Integer color);
-
     void showMessage(String content);
 }
